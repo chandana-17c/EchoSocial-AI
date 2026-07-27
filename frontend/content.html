@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoSocial AI Content Studio</title>
+    <link rel="stylesheet" href="content.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2 class="logo">EchoSocial 
+            <br> AI</h2>
+
+        <ul class="sidebar-menu">
+
+<li onclick="window.location.href='dashboard.html'">
+    <i class="fa-solid fa-house"></i>
+    Dashboard
+</li>
+
+
+<li onclick="window.location.href='trends.html'">
+    <i class="fa-solid fa-arrow-trend-up"></i>
+    Trends
+</li>
+
+
+<li onclick="window.location.href='content-ideas.html'">
+    <i class="fa-solid fa-lightbulb"></i>
+    Content Ideas
+</li>
+
+
+<li onclick="window.location.href='image-studio.html'">
+    <i class="fa-solid fa-image"></i>
+    Image Studio
+</li>
+
+<li onclick="window.location.href='schedule.html'">
+    <i class="fa-solid fa-calendar-days"></i>
+    Schedule
+</li>
+
+<li onclick="window.location.href='marketing.html'">
+    <i class="fa-solid fa-chart-line"></i>
+    Marketing Strategy
+</li>
+
+
+<li onclick="window.location.href='analytics.html'">
+    <i class="fa-solid fa-chart-column"></i>
+    Analytics
+</li>
+
+
+<li onclick="window.location.href='settings.html'">
+    <i class="fa-solid fa-gear"></i>
+    Settings
+</li>
+
+</ul>
+        <div class="sidebar-user">
+
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <strong>Demo User</strong>
+                <small>demo@echosocial.ai</small>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="top-right">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="text"
+                        placeholder="Search features...">
+                </div>
+
+                <i class="fa-regular fa-bell notification"></i>
+                <i class="fa-solid fa-user-circle profile-icon"></i>
+            </div>
+
+        </header>
+
+ <div class="content-container">
+
+<h1 class="page-title">
+    ✨ AI Content Studio
+</h1>
+
+<div class="studio-card">
+
+<h2>✍️ Generate Post</h2>
+    <label>Platform</label>
+    <select id="postPlatform">
+        <option selected>LinkedIn</option>
+        <option>Facebook</option>
+        <option>Instagram</option>
+        <option>X (Twitter)</option>
+        <option>YouTube Community</option>
+    </select>
+
+    <label>Tone</label>
+    <select id="postTone">
+        <option selected>Professional</option>
+        <option>Friendly</option>
+        <option>Casual</option>
+
+    </select>
+
+    <label>Length</label>
+    <select id="postLength">
+        <option>Short</option>
+        <option selected>Medium</option>
+        <option>Long</option>
+
+    </select>
+
+    <button
+        class="primary-btn"
+        id="generatePostBtn">
+
+        Generate Post
+
+    </button>
+
+    <div
+        id="generatedPost"
+        class="generated-output">
+       Generated post will appear here...
+    </div>
+
+</div>
+    <!-- Thread -->
+
+    <div class="studio-card">
+<h2>🧵 Generate Thread</h2>
+    <label>Platform</label>
+    <select id="threadPlatform">
+        <option selected>X (Twitter)</option>
+        <option>Threads</option>
+    </select>
+    <button
+        class="primary-btn"
+        id="generateThreadBtn">
+
+        Generate Thread
+
+    </button>
+
+    <div
+        id="generatedThread"
+        class="generated-output">
+        Generated thread will appear here...
+
+    </div>
+
+</div>
+ 
+  <div class="studio-card">
+
+    <h2>📊 Analyze Post</h2>
+
+    <button
+        class="primary-btn"
+        id="analyzePostBtn">
+
+        Analyze Post
+
+    </button>
+
+    <div
+        id="postAnalysis"
+        class="generated-output">
+
+        Post analysis will appear here...
+
+    </div>
+
+</div>
+
+  <div class="bottom-actions">
+
+   <button class="action-box" id="rewriteBtn">
+    🔄 Rewrite Post
+</button>
+
+
+<button class="action-box" id="scheduleBtn">
+    📅 Schedule
+</button>
+
+
+    <div id="scheduleModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Schedule Post</h2>
+
+        <label>Date</label>
+        <input type="date" id="scheduleDate">
+
+        <label>Time</label>
+        <input type="time" id="scheduleTime">
+
+       <label>Content Type</label>
+
+<select id="scheduleType">
+
+<option value="post">
+Post
+</option>
+
+<option value="thread">
+Thread
+</option>
+
+</select> 
+
+        <div class="modal-buttons">
+
+            <button id="saveScheduleBtn"
+                    class="primary-btn">
+
+                Schedule Post
+             </button>
+
+            <button 
+id="cancelScheduleBtn"
+class="cancel-btn">
+Cancel
+</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>       
+
+<script src="content.js"></script>
+<script src="theme.js"></script>
+</body>
+
+</html>

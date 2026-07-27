@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<mea name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idea Workspace | EchoSocial AI</title>
+<link rel="stylesheet" href="image-studio.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+<div class="dashboard-layout">
+
+<aside class="sidebar">
+
+<h2 class="logo">
+EchoSocial
+<br>
+AI
+</h2>
+
+<ul class="sidebar-menu">
+
+<li onclick="window.location.href='dashboard.html'">
+    <i class="fa-solid fa-house"></i>
+    Dashboard
+</li>
+
+<li onclick="window.location.href='trends.html'">
+    <i class="fa-solid fa-arrow-trend-up"></i>
+    Trends
+</li>
+
+<li onclick="window.location.href='content-ideas.html'">
+    <i class="fa-solid fa-lightbulb"></i>
+    Content Ideas
+</li>
+
+<li onclick="window.location.href='image-studio.html'">
+    <i class="fa-solid fa-image"></i>
+    Image Studio
+</li>
+
+<li onclick="window.location.href='schedule.html'">
+    <i class="fa-solid fa-calendar-days"></i>
+    Schedule
+</li>
+
+<li onclick="window.location.href='marketing.html'">
+    <i class="fa-solid fa-chart-line"></i>
+    Marketing Strategy
+</li>
+
+
+<li onclick="window.location.href='analytics.html'">
+    <i class="fa-solid fa-chart-column"></i>
+    Analytics
+</li>
+
+
+<li onclick="window.location.href='settings.html'">
+    <i class="fa-solid fa-gear"></i>
+    Settings
+</li>
+
+</ul>
+
+<div class="sidebar-user">
+
+<i class="fa-solid fa-user"></i>
+
+<div>
+
+<strong>
+Demo User
+</strong>
+
+
+<small>
+demo@echosocial.ai
+</small>
+
+</div>
+
+</div>
+
+</aside>
+
+<main class="main-content">
+<header class="topbar">
+<div class="top-right">
+<div class="search-box">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input 
+type="text"
+placeholder="Search features...">
+</div>
+<i class="fa-regular fa-bell notification"></i>
+<i class="fa-solid fa-user-circle profile-icon"></i>
+</div>
+
+
+</header>
+<div class="page-header">
+
+    <div>
+        <h1>
+    🎨 Image Studio
+</h1>
+
+        <p>Create stunning visuals for your social media posts using AI.</p>
+    </div>
+
+   <div class="ai-badge">
+    ✨ AI Powered
+</div>
+
+</div>
+
+
+<div class="image-studio-card">
+
+    <!-- Image Topic -->
+
+    <div class="form-section">
+
+        <h3>
+    💡 Image Topic
+</h3>
+
+        <input
+            type="text"
+            id="imageTopic"
+            placeholder="Enter your image idea...">
+
+    </div>
+
+
+    <!-- Style -->
+
+    <div class="form-section">
+
+        <h3>
+    🎭 Choose Style
+</h3>
+        <div class="style-options">
+
+            <label>
+<input type="radio" name="style" value="Realistic" checked>
+📷 Realistic
+</label>
+
+<label>
+<input type="radio" name="style" value="Cinematic">
+🎬 Cinematic
+</label>
+
+<label>
+<input type="radio" name="style" value="Minimal">
+✨ Minimal
+</label>
+
+<label>
+<input type="radio" name="style" value="3D Illustration">
+🧊 3D Illustration
+</label>
+
+<label>
+<input type="radio" name="style" value="Futuristic">
+🚀 Futuristic
+</label>
+
+    </div>
+
+
+    <!-- Generate Prompt -->
+
+    <div class="button-center">
+
+        <button id="generatePromptBtn">
+
+            ✨ Generate Prompt
+
+        </button>
+
+    </div>
+
+
+    <!-- AI Prompt -->
+
+    <div class="form-section">
+
+    <h3>
+    ✍️ Image Prompt
+</h3>
+
+<textarea
+    id="imagePrompt"
+    rows="7"
+    placeholder="Enter your prompt or generate one using AI..."
+>
+</textarea>
+
+    </div>
+
+
+    <!-- Generate Image -->
+
+    <div class="button-center">
+
+        <button id="generateImageBtn">
+
+          🖼️ Generate Image
+        </button>
+
+    </div>
+
+
+    <!-- Generated Image -->
+
+    <div class="form-section">
+
+        <h3>
+
+           <h3>
+    🖼️ Generated Image
+</h3>
+        </h3>
+
+        <div class="image-preview">
+
+            <img
+id="generatedImage"
+src="image_studio_pic.png"
+alt="Generated Image">
+
+        </div>
+
+    </div>
+
+
+    <!-- Action Buttons -->
+
+    <div class="action-buttons">
+
+        <button id="downloadBtn">
+⬇️ Download
+
+        </button>
+
+        <button id="usePostBtn">
+
+           📤 Use in Post
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="image-studio.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

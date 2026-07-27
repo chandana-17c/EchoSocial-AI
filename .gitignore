@@ -1,0 +1,34 @@
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Database
+echosocial.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node modules (if frontend uses npm later)
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Render / deployment files
+.env.*

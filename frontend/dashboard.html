@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoSocial Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+
+<div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2 class="logo">
+            EchoSocial 
+            <br>
+            AI
+        </h2>
+
+       <ul class="sidebar-menu">
+
+<li onclick="window.location.href='dashboard.html'">
+    <i class="fa-solid fa-house"></i>
+    Dashboard
+</li>
+
+
+<li onclick="window.location.href='trends.html'">
+    <i class="fa-solid fa-arrow-trend-up"></i>
+    Trends
+</li>
+
+
+<li onclick="window.location.href='content-ideas.html'">
+    <i class="fa-solid fa-lightbulb"></i>
+    Content Ideas
+</li>
+
+
+<li onclick="window.location.href='image-studio.html'">
+    <i class="fa-solid fa-image"></i>
+    Image Studio
+</li>
+
+<li onclick="window.location.href='schedule.html'">
+    <i class="fa-solid fa-calendar-days"></i>
+    Schedule
+</li>
+
+<li onclick="window.location.href='marketing.html'">
+    <i class="fa-solid fa-chart-line"></i>
+    Marketing Strategy
+</li>
+
+
+<li onclick="window.location.href='analytics.html'">
+    <i class="fa-solid fa-chart-column"></i>
+    Analytics
+</li>
+
+
+<li onclick="window.location.href='settings.html'">
+    <i class="fa-solid fa-gear"></i>
+    Settings
+</li>
+
+</ul>
+        <div class="sidebar-user">
+
+            <i class="fa-solid fa-user"></i>
+
+            <div>
+
+                <strong id="username">Demo User</strong>
+
+                <small>demo@echosocial.ai</small>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+   
+    <div class="top-right">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search features...">
+
+        </div>
+
+        <i class="fa-regular fa-bell notification"></i>
+
+        <i class="fa-solid fa-user-circle profile-icon"></i>
+
+    </div>
+
+</header>
+
+        <section class="welcome">
+
+            <h1>Welcome back, User! </h1>
+
+            <p>Here's your social media overview for today.</p>
+
+        </section>
+
+        <section class="stats">
+
+    <div class="stat-card">
+        <div class="stat-icon blue">
+            <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+
+        <div>
+            <p>Total Posts</p>
+            <h3>128</h3>
+            <small>↑ 18% vs last week</small>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon green">
+            <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div>
+            <p>Followers</p>
+            <h3>6.2K</h3>
+            <small>↑ 12% vs last week</small>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon purple">
+            <i class="fa-regular fa-eye"></i>
+        </div>
+
+        <div>
+            <p>Reach</p>
+            <h3>24.7K</h3>
+            <small>↑ 22% vs last week</small>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon orange">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div>
+            <p>Engagement</p>
+            <h3>8.6%</h3>
+            <small>↑ 6% vs last week</small>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="dashboard-grid">
+
+    <!-- Trending AI News -->
+
+    <div class="trend-card">
+
+        <div class="trend-header">
+
+            <h2>Trending AI News</h2>
+
+            <a href="#" id="refreshNews">Refresh</a>
+
+        </div>
+
+        <div id="news-list">
+
+            <div class="trend-item">
+                <span>Loading latest AI news...</span>
+            </div>
+
+        </div>
+
+    <a href="trends.html" class="view-more">
+    View More →
+</a> 
+
+    </div>
+
+
+    <!-- Content Ideas -->
+
+    <div class="ideas-card">
+
+        <div class="card-header">
+
+            <h2>Content Ideas</h2>
+
+        </div>
+
+
+ <div class="ideas-list" id="ideas-list">
+    <p>Loading ideas...</p>
+</div>
+</div>
+
+</section>
+
+
+<section class ="bottom-grid">
+
+    <!-- Recent Posts -->
+
+    <div class="recent-card">
+
+        <div class="card-header">
+            <h2>Recent Posts</h2>
+            <a href="#">View all</a>
+        </div>
+
+      <div class="post-item">
+    <div class="post-left">
+        <i class="fa-brands fa-linkedin linkedin"></i>
+        <div>
+            <strong>The future of AI in digital marketing</strong>
+            <p>LinkedIn • June 31, 2026</p>
+        </div>
+    </div>
+    <span class="published">Published</span>
+</div>
+
+        <div class="post-item">
+    <div class="post-left">
+        <i class="fa-brands fa-instagram instagram"></i>
+        <div>
+            <strong>5 tips to grow your brand on Instagram</strong>
+            <p>Instagram • June 30, 2026</p>
+        </div>
+    </div>
+    <span class="published">Published</span>
+</div>
+
+<div class="post-item">
+    <div class="post-left">
+        <i class="fa-brands fa-x-twitter twitter"></i>
+        <div>
+            <strong>Content strategy that actually works!</strong>
+            <p>X • June 29, 2026</p>
+        </div>
+    </div>
+    <span class="published">Published</span>
+</div>
+
+<div class="post-item">
+    <div class="post-left">
+        <i class="fa-brands fa-facebook facebook"></i>
+        <div>
+            <strong>5 AI tools every marketer should know</strong>
+            <p>Facebook • June 28, 2026</p>
+        </div>
+    </div>
+    <span class="published">Published</span>
+</div>
+    </div>
+
+<div class="upcoming-card">
+
+    <h2>Upcoming Posts</h2>
+
+    <div class="schedule-grid">
+
+        <div class="schedule-box">
+            <strong>Tomorrow</strong>
+            <p>10:30 AM</p>
+            <span>LinkedIn Post</span>
+            <div class="scheduled green">Scheduled</div>
+        </div>
+
+        <div class="schedule-box">
+            <strong>Friday</strong>
+            <p>6:00 PM</p>
+            <span>Instagram Reel</span>
+            <div class="scheduled green">Scheduled</div>
+        </div>
+
+        <div class="schedule-box">
+            <strong>Saturday</strong>
+            <p>9:00 AM</p>
+            <span>X Thread</span>
+            <div class="scheduled green">Scheduled</div>
+        </div>
+
+        <div class="schedule-box">
+            <strong>Monday</strong>
+            <p>2:00 PM</p>
+            <span>Facebook Post</span>
+            <div class="scheduled yellow">Draft</div>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+    <!-- Quick Actions -->
+
+
+
+
+    </main>
+
+</div>
+
+<script src="dashboard.js"></script>
+<script src="theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,505 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F7FAFF;
+    color:#1E293B;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+/* Background Glow */
+
+.bg-circle{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+    opacity:.55;
+}
+
+.circle1{
+    width:450px;
+    height:450px;
+    background:#D8ECFF;
+    top:-120px;
+    left:-120px;
+}
+
+.circle2{
+    width:380px;
+    height:380px;
+    background:#EEF6FF;
+    bottom:-100px;
+    right:-80px;
+}
+
+/* Main Container */
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#2563EB;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#475569;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563EB;
+}
+
+.login-btn{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1D4ED8;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    min-height:calc(100vh - 90px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+/* ==========================
+   HERO BADGE
+========================== */
+
+.hero-badge{
+    display:inline-block;
+    padding:12px 26px;
+    border-radius:50px;
+    background:#E0F2FE;
+    color:#2563EB;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:72px;
+    line-height:1.15;
+    color:#0F172A;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    color:#64748B;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:40px;
+}
+/* ==========================
+FEATURES
+========================== */
+
+.features{
+    margin:120px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:46px;
+    color:#0F172A;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#64748B;
+    font-size:19px;
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.feature-card{
+    background:#FFFFFF;
+    border:1px solid #E5EEF9;
+    border-radius:24px;
+    padding:40px 35px;
+    box-shadow:0 8px 25px rgba(15,23,42,.05);
+    transition:.35s ease;
+    cursor:pointer;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+    border-color:#2563EB;
+}
+
+.feature-card i{
+    font-size:40px;
+    color:#2563EB;
+    margin-bottom:25px;
+}
+
+.feature-card h3{
+    font-size:28px;
+    color:#0F172A;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#64748B;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ==========================
+HOW IT WORKS
+========================== */
+
+.workflow{
+    margin:120px 0;
+}
+
+.workflow-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.workflow-card{
+    background:#FFFFFF;
+    border-radius:24px;
+    padding: 45px 35px;
+    border:1px solid #E5EEF9;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(15,23,42,.05);
+    transition:.35s;
+}
+
+.workflow-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    margin:auto;
+    margin-bottom:25px;
+    border-radius:50%;
+    background:#2563EB;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:700;
+}
+
+.workflow-card h3{
+    margin-bottom:18px;
+    font-size:24px;
+    color:#0F172A;
+}
+
+.workflow-card p{
+    color:#64748B;
+    line-height:1.8;
+}
+
+/* ==========================
+PREVIEW
+========================== */
+
+.preview{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    min-height:600px;
+}
+
+.preview-text{
+    flex:1;
+    max-width:500px;
+}
+
+.preview-image{
+    flex:2.1;
+    display:flex;
+    justify-content:center;
+}
+
+.preview-image img{
+    width:100%;
+    max-width:950px;
+    border-radius:24px;
+    box-shadow:0 20px 50px rgba(37,99,235,.15);
+    transition:.3s;
+}
+
+.preview-image img:hover{
+    transform:scale(1.02);
+}
+
+.preview-badge{
+    display:inline-block;
+    background:#E8F1FF;
+    color:#2563EB;
+    padding:10px 22px;
+    border-radius:40px;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+.preview h2{
+    font-size:48px;
+    color:#0F172A;
+    margin-bottom:25px;
+}
+
+.preview p{
+    color:#64748B;
+    line-height:1.9;
+    font-size:19px;
+    margin-bottom:35px;
+}
+
+.preview-btn{
+    padding:16px 34px;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.preview-btn:hover{
+    background:#1D4ED8;
+    transform:translateY(-4px);
+}
+
+
+/* ==========================
+SUPPORTED PLATFORMS
+========================== */
+
+.platforms{
+    margin:140px 0;
+}
+
+.platform-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:25px;
+    margin-top:50px;
+}
+
+.platform-card{
+    background:#FFFFFF;
+    border:1px solid #E5EEF9;
+    border-radius:22px;
+    padding:24px 16px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+}
+
+.platform-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(37,99,235,.15);
+}
+
+.platform-card i{
+    font-size:42px;
+    color:#2563EB;
+    margin-bottom:20px;
+}
+
+.platform-card h3{
+    color:#0F172A;
+    font-size:20px;
+}
+
+/* ==========================
+CTA
+========================== */
+
+.cta{
+    margin:150px 0 100px;
+    text-align:center;
+    background:#FFFFFF;
+    border:1px solid #E5EEF9;
+    border-radius:30px;
+    padding:80px 40px;
+    box-shadow:0 15px 40px rgba(15,23,42,.06);
+}
+
+.cta h2{
+    font-size:48px;
+    color:#0F172A;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 40px;
+    color:#64748B;
+    font-size:19px;
+    line-height:1.8;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.primary-btn{
+    padding:16px 36px;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:14px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    background:#1D4ED8;
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    padding:16px 36px;
+    background:white;
+    color:#2563EB;
+    border:2px solid #2563EB;
+    border-radius:14px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+    background:#2563EB;
+    color:white;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+    text-align:center;
+    padding:50px 0;
+}
+
+footer h3{
+    font-size:30px;
+    color:#2563EB;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#64748B;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.footer-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:30px 0;
+}
+
+.footer-icons i{
+    font-size:30px;
+    color:#2563EB;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.footer-icons i:hover{
+    transform:translateY(-6px);
+}
+
+.copyright{
+    font-size:15px;
+    color:#94A3B8;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idea Workspace | EchoSocial AI</title>
+<link rel="stylesheet" href="idea-workspace.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+
+<div class="dashboard-layout">
+
+<aside class="sidebar">
+
+<h2 class="logo">
+EchoSocial
+<br>
+AI
+</h2>
+
+<ul class="sidebar-menu">
+
+<li onclick="window.location.href='dashboard.html'">
+    <i class="fa-solid fa-house"></i>
+    Dashboard
+</li>
+
+
+<li onclick="window.location.href='trends.html'">
+    <i class="fa-solid fa-arrow-trend-up"></i>
+    Trends
+</li>
+
+
+<li onclick="window.location.href='content-ideas.html'">
+    <i class="fa-solid fa-lightbulb"></i>
+    Content Ideas
+</li>
+
+
+<li onclick="window.location.href='image-studio.html'">
+    <i class="fa-solid fa-image"></i>
+    Image Studio
+</li>
+
+<li onclick="window.location.href='schedule.html'">
+    <i class="fa-solid fa-calendar-days"></i>
+    Schedule
+</li>
+
+<li onclick="window.location.href='marketing.html'">
+    <i class="fa-solid fa-chart-line"></i>
+    Marketing Strategy
+</li>
+
+
+<li onclick="window.location.href='analytics.html'">
+    <i class="fa-solid fa-chart-column"></i>
+    Analytics
+</li>
+
+
+<li onclick="window.location.href='settings.html'">
+    <i class="fa-solid fa-gear"></i>
+    Settings
+</li>
+
+</ul>
+
+
+<div class="sidebar-user">
+<i class="fa-solid fa-user"></i>
+<div>
+
+<strong>
+Demo User
+</strong>
+<small>
+demo@echosocial.ai
+</small>
+</div>
+
+</div>
+
+</aside>
+
+<main class="main-content">
+
+<header class="topbar">
+<div class="top-right">
+<div class="search-box">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input 
+type="text"
+placeholder="Search features...">
+</div>
+<i class="fa-regular fa-bell notification"></i>
+<i class="fa-solid fa-user-circle profile-icon"></i>
+
+</div>
+
+
+</header>
+
+<div class="content-container">
+<div class="workspace">
+<div class="idea-box">
+
+
+<h1 id="ideaTitle">
+</h1>
+
+
+<div class="description-box">
+
+<h3>
+💡 About this idea
+</h3>
+
+
+<p id="ideaDescription">
+</p>
+
+</div>
+
+
+<div class="actions">
+
+<button id="scriptBtn">
+✍️ Create Script
+</button>
+
+<button id="imageBtn">
+🎨 Image Prompt
+</button>
+
+</div>
+
+
+<div class="style-section" id="styleSection" style="display:none;">
+
+<h3>
+🎭 Choose Image Style
+</h3>
+
+<label>
+<input 
+type="radio" 
+name="imageStyle"
+value="Realistic photography"
+checked>
+
+Realistic
+</label>
+
+<label>
+<input 
+type="radio" 
+name="imageStyle"
+value="Cinematic style">
+
+Cinematic
+</label>
+
+<label>
+<input 
+type="radio" 
+name="imageStyle"
+value="Minimal clean design">
+
+Minimal
+</label>
+
+<label>
+<input 
+type="radio" 
+name="imageStyle"
+value="3D illustration">
+
+3D Illustration
+</label>
+
+<label>
+<input 
+type="radio"
+name="imageStyle"
+value="Futuristic digital art">
+
+Futuristic
+</label>
+
+</div>
+<div id="captionResult" class="result-box"></div>
+<div id="scriptResult" class="result-box"></div>
+<div id="imagePromptResult" class="result-box"></div>
+
+</div>
+
+</div>
+
+
+<script src="idea-workspace.js"></script>
+<script src="theme.js"></script>
+
+</body>
+
+</html>
