@@ -55,7 +55,7 @@ try{
 
 const response = await fetch(
 
-"https://echosocialai.onrender.com/script-generator",
+"https://echosocial-ai.onrender.com/script-generator",
 
 {
 
@@ -188,7 +188,7 @@ try{
 
 const response = await fetch(
 
-"https://echosocialai.onrender.com/generate-image-prompt",
+"https://echosocial-ai.onrender.com/generate-image-prompt",
 
 {
 

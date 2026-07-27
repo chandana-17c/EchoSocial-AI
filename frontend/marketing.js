@@ -52,7 +52,7 @@ try{
 
 const response = await fetch(
 
-"https://echosocialai.onrender.com/marketing-strategy",
+"https://echosocial-ai.onrender.com/marketing-strategy",
 
 {
 

@@ -6,7 +6,7 @@ const title = decodeURIComponent(params.get("title") || "");
 
 document.getElementById("newsTitle").textContent = title;
 
-fetch("https://echosocialai.onrender.com/summarize-news", {
+fetch("https://echosocial-ai.onrender.com/summarize-news", {
 
     method: "POST",
 

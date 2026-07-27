@@ -6,7 +6,7 @@ async function loadTrendingNews() {
 
     try {
 
-        const response = await fetch("https://echosocialai.onrender.com/trends");
+        const response = await fetch("https://echosocial-ai.onrender.com/trends");
 
         const data = await response.json();
 
@@ -57,7 +57,7 @@ async function loadContentIdeas(){
     try{
 
         const response = await fetch(
-            "https://echosocialai.onrender.com/content-ideas",
+            "https://echosocial-ai.onrender.com/content-ideas",
             {
                 method:"POST",
                 headers:{

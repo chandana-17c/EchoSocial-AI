@@ -8,7 +8,7 @@ async function loadAnalytics(){
     try{
 
         const response = await fetch(
-            "https://echosocialai.onrender.com/analytics"
+            "https://echosocial-ai.onrender.com/analytics"
         );
 
 

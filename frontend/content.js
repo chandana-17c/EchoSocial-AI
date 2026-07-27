@@ -35,7 +35,7 @@ async function generatePost() {
     try {
 
         const response = await fetch(
-            "https://echosocialai.onrender.com/generate-post",
+            "https://echosocial-ai.onrender.com/generate-post",
             {
 
                 method: "POST",
@@ -101,7 +101,7 @@ async function generateThread() {
     try {
 
         const response = await fetch(
-            "https://echosocialai.onrender.com/generate-thread",
+            "https://echosocial-ai.onrender.com/generate-thread",
             {
 
                 method: "POST",
@@ -176,7 +176,7 @@ async function analyzePost() {
 
         const response = await fetch(
 
-            "https://echosocialai.onrender.com/analyze-post",
+            "https://echosocial-ai.onrender.com/analyze-post",
 
             {
 
@@ -258,7 +258,7 @@ async function rewritePost() {
 
         const response = await fetch(
 
-            "https://echosocialai.onrender.com/rewrite-post",
+            "https://echosocial-ai.onrender.com/rewrite-post",
 
             {
 
@@ -370,7 +370,7 @@ else{
 
         const response = await fetch(
 
-            "https://echosocialai.onrender.com/schedule-post",
+            "https://echosocial-ai.onrender.com/schedule-post",
 
             {
 
