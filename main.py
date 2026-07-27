@@ -15,6 +15,10 @@ from models import  ScheduledPost
 from sqlalchemy.orm import Session
 
 from fastapi.middleware.cors import CORSMiddleware
+from database import engine
+from models import Base
+
+Base.metadata.create_all(bind=engine)
 #==================================
 # LOAD ENVIRONMENT VARIABLES
 # ==========================================
