@@ -127,11 +127,22 @@ EchoSocial-AI/
 
 ---
 
-# 📸 Application Screenshots
+## 📸 Application Screenshots
 
-(Add dashboard, content studio, trends, analytics screenshots here)
+### Dashboard
 
----
+
+### Content Studio
+
+(Add your content studio screenshot here)
+
+### Trends
+
+(Add your trends screenshot here)
+
+### Analytics
+
+(Add your analytics screenshot here)
 
 # ⚙️ Installation
 
@@ -157,6 +168,7 @@ frontend/index.html
 - Automated posting to social platforms
 - Advanced performance optimization using user engagement data
 - Personalized content recommendations
+
 
 
 👩‍💻 Author
