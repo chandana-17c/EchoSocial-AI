@@ -144,6 +144,12 @@ EchoSocial-AI/
 
 (Add your analytics screenshot here)
 
+## 🎥 Project Demo
+
+Watch the complete EchoSocial AI demonstration:
+
+[[▶️ View Loom Demo](https://www.loom.com/share/7f6de5422e2341978fdbf8b08baf18d0)
+
 # ⚙️ Installation
 
 Clone the repository:
