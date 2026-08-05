@@ -127,22 +127,6 @@ EchoSocial-AI/
 
 ---
 
-## 📸 Application Screenshots
-
-### Dashboard
-
-
-### Content Studio
-
-(Add your content studio screenshot here)
-
-### Trends
-
-(Add your trends screenshot here)
-
-### Analytics
-
-(Add your analytics screenshot here)
 
 ## 🎥 Project Demo
 
